@@ -2,6 +2,7 @@ html{
     height: 100%;
     width: 100%;
 }
+
 header{
     height: 10vh;
     padding-top: 1em;
@@ -10,6 +11,7 @@ header{
 ul{
     margin-top: 3em;
 }
+
 h2{
     font-size: 3rem;
     padding: .2em;
