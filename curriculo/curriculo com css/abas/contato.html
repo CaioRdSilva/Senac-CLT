@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.js"></script><style type="text/css"></style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</head>
+<link rel="stylesheet" href="../css/style.css">
+<body>
+    <div class="center container">
+        <form action="#">
+        <span>Nome*</span>
+        <input type="text" placeholder="Nome" required>
+        <span>Sobrenome*</span>
+        <input type="text" placeholder="Sobrenome" required>
+        <span>Telefone*</span>
+        <input type="tel" placeholder="Telefone" required>
+        <span>Email*</span>
+        <input type="email" placeholder="Email" required>
+        <span>Mensagem*</span>
+        <textarea name="Mensagem" id="" cols="30" rows="10" placeholder="Escreva a mensagem..." required></textarea>
+        
+            <div class = "row">
+            <label>Lingua</label>
+               <select>
+                  <option value = "" disabled selected>Selecione Lingua</option>
+                  <option value = "1">Inglês</option>
+                  <option value = "2">Espanhol</option>
+                  <option value = "3">Frances</option>
+                  <option value="4">Português(PT-BR)</option>
+               </select>               
+            </div>
+        
+        <span>Protótipo (requisitos)</span>
+        <input type="file" accept="image/jpeg, image/png, application/pdf, application/doc, application/docx">
+        <label>Escolha as linguagens preferidas</label>
+        <select multiple="multiple">
+            <option value = "" disabled selected>Selecione linguagens</option>
+            <option value = "1">Java</option>
+            <option value = "2">javascript</option>
+            <option value = "3">Python</option>
+            <option value="4">C++</option>
+         </select>   
+         <span>Banco de dados</span>
+         <div>
+             <p><input type="radio" id="radio1" name="bd_use" value="MySql" ><label for="radio1">Mysql</label></p>
+             <p><input type="radio" id="radio2" name="bd_use" value="MongoDB"> <label for="radio2">MongoDB</label></p>
+             <p><input type="radio" id="radio3" name="bd_use" value="Postegre"> <label for="radio3">Postegre</label></p>
+             <p><input type="radio" id="radio4" name="bd_use" value="MariaDB"> <label for="radio4">MariaDB</label></p>
+             <p><input type="radio" id="radio5" name="bd_use" value="outro"> <label for="radio5">Outro</label></p>
+         </div>
+         <span>Horario Para Reuniões*</span>
+         <div>
+            <p><input type="checkbox" name="Manhã" id="manha"><label for="manha">Manhã</label></p> 
+             <p><input type="checkbox" name="Tarde" id="tarde"><label for="tarde">Tarde</label></p>
+             <p><input type="checkbox" name="Noite" id="noite"><label for="noite">noite</label></p>
+            </div>
+            <span>Horário Sugerido</span>
+            <input type="time">
+            <span>Data prevista de entrega</span>
+            <input type="date">
+            <input class="waves-effect waves-light btn" type="submit" value="Enviar">
+            <input class="waves-effect waves-light btn" type="reset" value="Limpar">
+    </form>
+    </div>
+         <script type="text/javascript">
+            window.onload=function(){
+            $(document).ready(function() {
+                $('select').material_select();
+            });
+            }
+            
+            </script>
+</body>
+</html>

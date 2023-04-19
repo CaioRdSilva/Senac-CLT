@@ -25,3 +25,8 @@ blockquote{
     height: 100vh;
     width: auto;
 }
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: absolute;
+    opacity: 0; 
+    pointer-events: none;
+}
